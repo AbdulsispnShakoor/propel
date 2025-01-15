@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Property</title>
+    <link rel="stylesheet" href="add-property-form-model.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <button class="close-btn">&times;</button>
+      <h2>Add new Property</h2>
+      <p class="subheading">
+        Make sure you have filled in all necessary fields
+      </p>
+
+      <form id="property-form">
+        <label>Property Type</label>
+        <select>
+          <option>Select property Type</option>
+        </select>
+
+        <div class="row">
+          <div class="col">
+            <label>Bedrooms</label>
+            <select>
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="col">
+            <label>Baths</label>
+            <select>
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="col">
+            <label>Square Feet</label>
+            <select>
+              <option>Select</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label>Monthly Rent</label>
+            <input type="text" placeholder="$0.00" />
+          </div>
+          <div class="col">
+            <label>Security Deposit</label>
+            <input type="text" placeholder="$0.00" />
+          </div>
+        </div>
+
+        <label>Description</label>
+        <textarea placeholder="Tell us about your home"></textarea>
+
+        <div class="row">
+          <div class="col">
+            <label>Date Available</label>
+            <input type="date" />
+          </div>
+          <div class="col">
+            <label>Lease Duration</label>
+            <select>
+              <option>Select</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="file-upload">
+          <p>Choose a file or drag & drop it here.</p>
+          <p class="file-types">
+            JPEG, PNG, PDF, and MP4 formats, up to 50 MB.
+          </p>
+          <button type="button">Browse File</button>
+        </div>
+
+        <button class="save-btn">Save</button>
+      </form>
+    </div>
+  </body>
+</html>
