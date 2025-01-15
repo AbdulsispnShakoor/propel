@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All properties</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="all-properties.css" />
+    <title>Property detail page</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./property-detail-page.css" />
 
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -27,7 +27,7 @@
       <!-- Sidebar -->
       <aside class="sidebar">
         <div class="logo">
-          <img src="../../public/images/propel-logo.png" alt="propel" />
+          <img src="../../../public/images/propel-logo.png" alt="propel" />
           <div class="logo-info">
             <h2>Propel</h2>
             <p>Property Management</p>
@@ -842,7 +842,7 @@
           <!-- Left Section (User Info) -->
           <div class="user-info">
             <img
-              src="../../public/images/Avatar.png"
+              src="../../../public/images/Avatar.png"
               alt="User Avatar"
               class="avatar"
             />
@@ -859,483 +859,195 @@
               <span class="badge"></span>
             </div>
             <img
-              src="../../public/images/Avatar.png"
+              src="../../../public/images/Avatar.png"
               alt="User Avatar"
               class="avatar"
             />
           </div>
         </header>
         <!-- header end -->
+        <!-- property detail start here -->
+        <div class="property-container">
+          <div class="property-header">
+            <h1 class="property-title">Triple Story House for Rent</h1>
+            <p class="property-address">2699 Green Valley, Highland Lake, FL</p>
+          </div>
 
-        <!-- my properties start -->
-        <section class="propert-grid-data">
-          <div class="property-section">
-            <div class="property-header">
-              <div class="header-wrapper">
-                <h1 class="property-title">My Properties</h1>
-              </div>
+          <div class="gallery-container">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/81ed5a66af39c1b3624a6b3609a7d35ba6266f371f9491008d150c0018b9c6a1?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+              alt="Main view of triple story house"
+              class="main-image"
+            />
+            <div class="thumbnail-container">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f88cf404e0805c710362a04b0fa5debc12d77892484552343424ccfaa55b85e0?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                alt="Property view 2"
+                class="thumbnail"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/71ffa20dc57994c8dbd6ca57910c12f11b5a1cb5ea37b6ce1d6fd58856236a3a?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                alt="Property view 3"
+                class="thumbnail"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/baf03b3d6d8eccd70c406bde3d31072879bea8d19481f185148e75fe8470483b?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                alt="Property view 4"
+                class="thumbnail"
+              />
             </div>
-            <div class="filter-section">
-              <div class="search-container">
-                <div class="search-box" role="search">
-                  <label for="propertySearch" class="visually-hidden"
-                    >Search properties</label
-                  >
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e139ebbe8e51dbb491bda9cd614e20fdcd4635cebafdc10662cb91ed172d93e5?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    class="search-icon"
-                    alt=""
-                  />
-                  <input
-                    type="text"
-                    id="propertySearch"
-                    class="search-input"
-                    placeholder="Search..."
-                    aria-label="Search properties"
-                  />
-                </div>
-              </div>
-              <button class="add-property-btn" tabindex="0">
-                <span class="btn-text">Add New property</span>
+            <div class="agent-card">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f7a30ece872cfd85b90a759a5d7612f9e9b4aa812f30c9e9e19fcfcd28f816be?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                alt=""
+                class="agent-background"
+              />
+              <button class="message-button" tabindex="0">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/24478034abf88ff5294019c9b9a802ab5f75d0025ac82bc59903017bed09d73f?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                  alt=""
+                />
+                <span>Send message</span>
               </button>
-            </div>
-          </div>
-          <!-- my properties end -->
-          <!-- property grid start here -->
-          <div class="property-grid">
-            <div class="property-row">
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
+              <div class="divider"></div>
+
+              <div class="property-details">
+                <div class="detail-row">
+                  <span class="detail-label">Move-in Date</span>
+                  <span class="detail-value">Dec 1, 2021</span>
                 </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
+                <div class="detail-row">
+                  <span class="detail-label">Contact</span>
+                  <span class="detail-value">(+1) 324-5329</span>
                 </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
-              </div>
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
+                <div class="detail-row">
+                  <span class="detail-label">Price per month</span>
+                  <span class="detail-value">$1,900</span>
                 </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
-                </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
-              </div>
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
-                </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
-              </div>
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
-                </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
-              </div>
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
-                </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
-              </div>
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
-                </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
-              </div>
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
-                </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
-              </div>
-              <div class="property-card">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c28f3ec86a424f5f02b9b9f8d6bda96922d36161ffe08c329e1b102d63271db?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Triple Story House exterior view"
-                  class="property-image"
-                />
-                <div class="property-content">
-                  <div class="property-header">
-                    <h2 class="property-title">Triple Story House for Rent</h2>
-                    <p class="property-location">
-                      2699 Green Valley, Highland Lake, FL
-                    </p>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="property-features">
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/289eac9f075e6768cef144b1e67573199657aa9c3f2d7d91c6a5ee270f3a94e9?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>3 Beds</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e43eed09f8cd3f30896f1e9b9a7fc07e947416183148b4cc424c286fae6bb8e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>2 Bathrooms</span>
-                    </div>
-                    <div class="feature-item">
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                        alt=""
-                        class="feature-icon"
-                      />
-                      <span>5x7 m²</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="price-tag">
-                  <span class="price-amount">$2,095</span>
-                  <span class="price-period">/month</span>
-                </div>
-                <button class="favorite-button" aria-label="Add to favorites">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2069d2929d1dbef91f2e2b01144c24c7f06dc264b954502e1983e6824ed1439?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="feature-icon"
-                  />
-                </button>
               </div>
 
-              <!-- Additional property cards with identical structure -->
-              <!-- Repeated 5 more times for the complete grid -->
+              <div class="agent-profile">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/450953f0559867a0e5503b6e49ca2b9b488d4391cf5e024745eb800988289e09?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                  alt="Profile photo of Manuel Villa"
+                  class="agent-avatar"
+                />
+                <div class="agent-info">
+                  <span class="agent-name">Manuel Villa</span>
+                  <span class="agent-title">Real Estate Agents</span>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- property grid end here -->
-        </section>
+        </div>
+        <!-- property detail end here -->
+
+        <!-- info start -->
+        <div class="stats-container">
+          <div class="stat-group">
+            <div class="stat-label">Properties</div>
+            <div class="stat-value">46</div>
+            <div class="stat-icon"></div>
+          </div>
+
+          <div class="stat-group">
+            <div class="stat-label">Rooms</div>
+            <div class="stat-value">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a00be5e946727889d9540c1e54323ca5239c5ff75b49385d5999cedc1e8dc183?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                alt="Rooms icon"
+                class="stat-icon"
+              />
+              <div>4</div>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-group">
+              <div class="stat-label">Living Space</div>
+              <div class="stat-value">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/289bcae943bd35d13cc33a04aba33ef7b447474e5d6175a47f2dba68c70b3d3f?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                  alt="Living space icon"
+                  class="stat-icon"
+                />
+                <div>6x7.5 m²</div>
+              </div>
+            </div>
+
+            <div class="stat-group">
+              <div class="stat-label">Year Built</div>
+              <div class="stat-value">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0365bce0a001ec9be1058179659e4079d59512262f0e266ff72d46cb26dcad52?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                  alt="Calendar icon"
+                  class="stat-icon"
+                />
+                <div>2018</div>
+              </div>
+            </div>
+
+            <div class="stat-group">
+              <div class="stat-label">Tenants</div>
+              <div class="stat-value">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/17cc07a9262f996c5d292ff674ee93a34b722022a481e9ef64b0badeee775164?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                  alt="Tenants icon"
+                  class="stat-icon"
+                />
+                <div>12</div>
+              </div>
+            </div>
+
+            <div class="stat-group">
+              <div class="stat-label">Request</div>
+              <div class="stat-value">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/8d098103bf95788c9fa4c55fad7574aa9690966fc43a2f93d73247e69a5bd66e?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                  alt="Request icon"
+                  class="stat-icon"
+                />
+                <div>12</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- stats -->
+        <div class="room-availability">
+          <div class="availability-container">
+            <div class="availability-title">Available rooms</div>
+            <div class="availability-subtitle">Total rooms available</div>
+            <div class="progress-bar-above"></div>
+            <div class="progress-bar"></div>
+            <div class="availability-stats">
+              <div class="stats-text">2 rooms available of 4 rooms</div>
+              <div class="stats-percentage">50%</div>
+            </div>
+          </div>
+          <div class="room-description">
+            <div class="description-title">Description</div>
+            <div class="description-text">
+              Check out that Custom Backyard Entertaining space! 3237sqft, 4
+              Bedrooms, 2 Bathrooms house on a Lake Villa street in the Palm
+              Harbor neighborhood of Texas.
+            </div>
+            <div class="show-more-btn" tabindex="0" role="button">
+              Show more
+            </div>
+          </div>
+          <div class="equipment-section">
+            <div class="equipment-title">Equipment</div>
+            <div class="equipment-list">
+              <div class="equipment-item">Guest Toilet</div>
+              <div class="equipment-item">Suitable for flat sharing</div>
+              <div class="equipment-item">Fitted Kitchen</div>
+              <div class="equipment-item">Stepless Access</div>
+            </div>
+          </div>
+        </div>
+        <!-- stats -->
+        <!-- info end -->
       </main>
     </div>
   </body>
