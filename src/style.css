@@ -1,0 +1,200 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background: rgba(255, 255, 255, 1);
+}
+/* aside start */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #0a1f44;
+  color: white;
+  position: fixed;
+  padding-top: 8px;
+}
+
+.logo {
+  padding: 20px 12px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(116, 116, 116);
+}
+.logo-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.logo h2 {
+  margin: 5px 0;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.menu {
+  list-style: none;
+  padding: 12px 0px;
+}
+
+.menu li {
+  padding: 10px 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 0.4rem 0rem;
+}
+
+.menu-item i {
+  margin-right: 10px;
+  font-size: 12px;
+  height: 8px;
+}
+
+.menu-item:hover {
+  background-color: #1a2b5a;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.dropdown-content li {
+  padding: 8px 0;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 14px;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  color: white;
+}
+
+.arrow {
+  margin-left: auto;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* aside end */
+
+/* header start */
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  /* background-color: #fff; */
+  border-bottom: 1px solid #ddd;
+}
+
+/* User Info Section */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Header Icons (Notifications & Profile) */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Notification Icon */
+.notification {
+  position: relative;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 8px;
+  background-color: rgba(221, 221, 221, 0.39);
+  padding: 10px 13px;
+  border-radius: 50%;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Profile Avatar */
+.header-icons .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* header end */
+
+/* Main Content */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100vw - 270px);
+}
+
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
