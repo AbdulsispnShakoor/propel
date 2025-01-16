@@ -79,5 +79,21 @@
         <button class="save-btn">Save</button>
       </form>
     </div>
+
+    <script>
+      document
+        .getElementById("property-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          let propertyType = document.querySelector("select").value;
+          if (propertyType === "Select property Type") {
+            alert("Please select a property type.");
+            return;
+          }
+
+          alert("Form Submitted Successfully!");
+        });
+    </script>
   </body>
 </html>

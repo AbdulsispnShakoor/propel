@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.top-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+.subheading {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#searchInput {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#seeAllBtn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(44, 44, 44);
+  border: none;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+h4 {
+  display: inline-block;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+.sorting-user-data > span {
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-align: center;
+  /* background-color: rgb(0, 0, 0); */
+}
+.action-menu {
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.selected {
+  font-weight: bold;
+}

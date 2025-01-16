@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Propel</title>
-    <link rel="stylesheet" href="./src/style.css" />
-    <link rel="stylesheet" href="./src/dashboard.css" />
+    <title>All Units</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="all-units.css" />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="./src/script.js" defer></script>
-    <script src="./src/dashboard.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -26,7 +25,7 @@
       <!-- Sidebar -->
       <aside class="sidebar">
         <div class="logo">
-          <img src="./public/images/propel-logo.png" alt="propel" />
+          <img src="../../../public/images/propel-logo.png" alt="propel" />
           <div class="logo-info">
             <h2>Propel</h2>
             <p>Property Management</p>
@@ -75,7 +74,7 @@
             </a>
             <ul class="dropdown-content">
               <li>
-                <a href="all-properties.html">
+                <a href="#">
                   <span class="icon"
                     ><svg
                       width="20"
@@ -841,7 +840,7 @@
           <!-- Left Section (User Info) -->
           <div class="user-info">
             <img
-              src="./public/images/Avatar.png"
+              src="../../../public/images/Avatar.png"
               alt="User Avatar"
               class="avatar"
             />
@@ -858,359 +857,339 @@
               <span class="badge"></span>
             </div>
             <img
-              src="./public/images/Avatar.png"
+              src="../../../public/images/Avatar.png"
               alt="User Avatar"
               class="avatar"
             />
           </div>
         </header>
         <!-- header end -->
-
-        <!-- stats start from here -->
-
-        <div class="stats-container">
-          <div class="stat-card">
-            <div class="card-icon" style="background-color: #a6ddf0">
-              <i class="fas fa-building"></i>
+        <!-- all units table start here -->
+        <div class="container">
+          <div class="top-flex-container">
+            <div class="top-left">
+              <h2>All Units</h2>
+              <p class="subheading">Display the overview of Property</p>
             </div>
-            <div class="card-content">
-              <p class="card-title">Total Property</p>
-              <p class="card-value">8</p>
-            </div>
-          </div>
-
-          <div class="stat-card">
-            <div class="card-icon" style="background-color: #1d334a">
-              <i class="fas fa-home"></i>
-            </div>
-            <div class="card-content">
-              <p class="card-title">Total Units</p>
-              <p class="card-value">45</p>
-            </div>
-          </div>
-
-          <div class="stat-card">
-            <div class="card-icon" style="background-color: #1d334a">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="card-content">
-              <p class="card-title">Total Tenants</p>
-              <p class="card-value">120+</p>
-            </div>
-          </div>
-
-          <div class="stat-card">
-            <div class="card-icon" style="background-color: #4c687a">
-              <i class="fas fa-user-cog"></i>
-            </div>
-            <div class="card-content">
-              <p class="card-title">Total Maintainers</p>
-              <p class="card-value">250</p>
-            </div>
-          </div>
-        </div>
-        <!-- stats end here -->
-
-        <!-- revenue charts start here -->
-        <div class="revenue-overview">
-          <div class="widget-header">
-            <div class="header-content">
-              <div class="title-section">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/5cad1336445ce8ec92a295279830653c50c0c1b575509a7c80818c0c0fb44722?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Revenue Overview Icon"
-                  class="title-icon"
-                />
-                <div>Revenue Overview</div>
-              </div>
-
-              <div class="legend-container">
-                <div class="legend-item">
-                  <div class="legend-dot"><div class="dot dot-blue"></div></div>
-                  <div class="legend-text">Fish Pond 1</div>
-                </div>
-                <div class="legend-item">
-                  <div class="legend-dot"><div class="dot dot-dark"></div></div>
-                  <div class="legend-text">Fish Pond 2</div>
-                </div>
-                <div class="legend-item">
-                  <div class="legend-dot">
-                    <div class="dot dot-light"></div>
-                  </div>
-                  <div class="legend-text">Chicken Pond 3</div>
-                </div>
-              </div>
-
-              <div class="year-selector">
-                <select id="timeFilter">
-                  <option>Last Year</option>
-                  <option>Last 6 Months</option>
-                  <option>Last 3 Months</option>
-                </select>
-              </div>
-            </div>
-            <div class="divider"></div>
-          </div>
-
-          <div class="stats-grid">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/89e3e125d1d0a338c8f61cfbe25ac9911c4fd0080e5a8fa1bec784d0badc6297?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Total Rent Icon"
-                  class="selector-icon"
-                />
-              </div>
-              <div class="stat-content">
-                <div class="stat-label">Total Rent Collected</div>
-                <div class="stat-value">
-                  <div class="amount">$96,000.00</div>
-                  <div class="badge">+5%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="stat-item">
-              <div class="stat-icon">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/da2bbb46b5a091e2387f797ccd7db09914c904732988f57668571dccf822f162?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Expenses Icon"
-                  class="selector-icon"
-                />
-              </div>
-              <div class="stat-content">
-                <div class="stat-label">Expenses</div>
-                <div class="stat-value">
-                  <div class="amount">$10,000.00</div>
-                  <div class="badge">+5%</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="stat-item">
-              <div class="stat-icon">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/792e2e47ece4962b658c71908f5e4f8f40af12e7f34c44b0ea9a17dbcab755c0?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  alt="Maintenance Icon"
-                  class="selector-icon"
-                />
-              </div>
-              <div class="stat-content">
-                <div class="stat-label">Maintenance</div>
-                <div class="stat-value">
-                  <div class="amount">$5,000.00</div>
-                  <div class="badge">+5%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <canvas id="revenueChart"></canvas>
-        </div>
-        <!-- revenue charts end here -->
-
-        <!-- table design -->
-        <div class="properties-container">
-          <div class="header-section">
-            <div class="title-wrapper">
-              <div class="icon-container">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/110a4cb2a1cc5d3da470115cb09be8b155eba5612009057fd7f6eecf15ea5e19?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                  class="icon"
-                />
-              </div>
-              <div class="title-content">
-                <h2 class="section-title">My Properties</h2>
-                <p class="section-description">
-                  Display the overview of Property
-                </p>
-              </div>
-            </div>
-            <div class="search-section">
-              <div class="search-wrapper">
-                <div class="search-input-container">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e139ebbe8e51dbb491bda9cd614e20fdcd4635cebafdc10662cb91ed172d93e5?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt=""
-                    class="icon"
-                  />
-                  <label for="propertySearch" class="visually-hidden"
-                    >Search properties</label
-                  >
-                  <input
-                    type="search"
-                    id="propertySearch"
-                    class="search-input"
-                    placeholder="Search..."
-                  />
-                </div>
-              </div>
-              <button class="see-all-btn">See All</button>
-            </div>
-          </div>
-
-          <div class="table-header">
-            <div class="table-cell table-cell-name">
+            <div class="table-controls">
               <input
-                class="checkbox"
-                role="checkbox"
-                tabindex="0"
-                aria-checked="false"
-                type="checkbox"
+                type="text"
+                id="searchInput"
+                placeholder="Search..."
+                onkeyup="searchTable()"
               />
-              <span>Name</span>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/85485aee7f4c347ae3889bacb40342b3c42840fc16fed5e2e81806a13e14c34c?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                alt=""
-                class="icon"
-              />
+              <button id="seeAllBtn">See All</button>
             </div>
-            <div class="table-cell table-cell-units">
-              <span>Units</span>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/85485aee7f4c347ae3889bacb40342b3c42840fc16fed5e2e81806a13e14c34c?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                alt=""
-                class="icon"
-              />
-            </div>
-            <div class="table-cell table-cell-available">
-              <span>Available Units</span>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/85485aee7f4c347ae3889bacb40342b3c42840fc16fed5e2e81806a13e14c34c?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                alt=""
-                class="icon"
-              />
-            </div>
-            <div class="table-cell table-cell-tenants">
-              <span>Tenants</span>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f2b177d6e5aed7c298dd7775ba448e66e720681fb57b351fc460733cb66f775?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                alt=""
-                class="icon"
-              />
-            </div>
-            <div class="table-cell table-cell-maintainers">
-              <span>Maintainers</span>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f2b177d6e5aed7c298dd7775ba448e66e720681fb57b351fc460733cb66f775?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                alt=""
-                class="icon"
-              />
-            </div>
-            <div class="table-cell table-cell-actions"></div>
           </div>
 
-          <div class="table-content">
-            <div class="table-row">
-              <div class="table-data table-data-name">
-                <input
-                  class="checkbox"
-                  role="checkbox"
-                  tabindex="0"
-                  aria-checked="false"
-                  type="checkbox"
-                />
-                <span>House #5a Sarwar Chowk, Niaz Baig Lahore, Pakistan</span>
-              </div>
-              <div class="table-data table-data-units">35</div>
-              <div class="table-data table-data-available">30</div>
-              <div class="table-data table-data-tenants">25</div>
-              <div class="table-data table-data-maintainers">25</div>
-              <div class="table-data table-data-actions">
-                <button class="action-button">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1cec19e09fa95c790536c0c6783f94a56da5a7ba8b88902b369cdc5349eb3d51?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt="More actions"
-                    class="icon"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="divider"></div>
+          <table>
+            <thead>
+              <tr>
+                <th><input type="checkbox" id="selectAll" /></th>
+                <th onclick="sortTable(1)" class="sorting-user-data">
+                  <h4>Name</h4>
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1668 7.91667L10.0002 3.75L5.8335 7.91667H14.1668ZM14.1668 12.0833L10.0002 16.25L5.8335 12.0833H14.1668Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </th>
+                <th onclick="sortTable(2)" class="sorting-user-data">
+                  <h4>Property</h4>
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1668 7.91667L10.0002 3.75L5.8335 7.91667H14.1668ZM14.1668 12.0833L10.0002 16.25L5.8335 12.0833H14.1668Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </th>
+                <th onclick="sortTable(3)" class="sorting-user-data">
+                  <h4>Tenants</h4>
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1668 7.91667L10.0002 3.75L5.8335 7.91667H14.1668ZM14.1668 12.0833L10.0002 16.25L5.8335 12.0833H14.1668Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <!-- Data will be inserted here dynamically -->
+            </tbody>
+          </table>
 
-            <div class="table-row">
-              <div class="table-data table-data-name">
-                <input
-                  class="checkbox"
-                  role="checkbox"
-                  tabindex="0"
-                  aria-checked="false"
-                  type="checkbox"
-                />
-                <span>House #5a Sarwar Chowk, Niaz Baig Lahore, Pakistan</span>
-              </div>
-              <div class="table-data table-data-units">35</div>
-              <div class="table-data table-data-available">30</div>
-              <div class="table-data table-data-tenants">25</div>
-              <div class="table-data table-data-maintainers">25</div>
-              <div class="table-data table-data-actions">
-                <button class="action-button">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1cec19e09fa95c790536c0c6783f94a56da5a7ba8b88902b369cdc5349eb3d51?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt="More actions"
-                    class="icon"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="divider"></div>
-
-            <div class="table-row">
-              <div class="table-data table-data-name">
-                <input
-                  class="checkbox"
-                  role="checkbox"
-                  tabindex="0"
-                  aria-checked="false"
-                  type="checkbox"
-                />
-                <span>House #5a Sarwar Chowk, Niaz Baig Lahore, Pakistan</span>
-              </div>
-              <div class="table-data table-data-units">35</div>
-              <div class="table-data table-data-available">30</div>
-              <div class="table-data table-data-tenants">25</div>
-              <div class="table-data table-data-maintainers">25</div>
-              <div class="table-data table-data-actions">
-                <button class="action-button">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1cec19e09fa95c790536c0c6783f94a56da5a7ba8b88902b369cdc5349eb3d51?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt="More actions"
-                    class="icon"
-                  />
-                </button>
-              </div>
-            </div>
-            <div class="divider"></div>
-
-            <div class="table-row">
-              <div class="table-data table-data-name">
-                <input
-                  class="checkbox"
-                  role="checkbox"
-                  tabindex="0"
-                  aria-checked="false"
-                  type="checkbox"
-                />
-                <span>House #5a Sarwar Chowk, Niaz Baig Lahore, Pakistan</span>
-              </div>
-              <div class="table-data table-data-units">35</div>
-              <div class="table-data table-data-available">30</div>
-              <div class="table-data table-data-tenants">25</div>
-              <div class="table-data table-data-maintainers">25</div>
-              <div class="table-data table-data-actions">
-                <button class="action-button">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1cec19e09fa95c790536c0c6783f94a56da5a7ba8b88902b369cdc5349eb3d51?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
-                    alt="More actions"
-                    class="icon"
-                  />
-                </button>
-              </div>
-            </div>
+          <div class="pagination">
+            <button onclick="prevPage()">❮</button>
+            <span id="paginationNumbers"></span>
+            <button onclick="nextPage()">❯</button>
           </div>
         </div>
-        <!-- table design -->
+        <!-- all units table end here -->
       </main>
     </div>
+
+    <!-- script start here -->
+    <script>
+      // Sample Data
+      const data = [
+        {
+          name: "Naveed Shabbir",
+          property: "House# 5a sarwar chowk",
+          tenants: 30,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Ali Khan",
+          property: "House# 2b street 9",
+          tenants: 25,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Sarah Ahmed",
+          property: "Flat# 101 Green Apartments",
+          tenants: 20,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Ahmed Raza",
+          property: "Villa# 3 Blue Area",
+          tenants: 15,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Zain Malik",
+          property: "House# 15 Model Town",
+          tenants: 10,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+        {
+          name: "Hassan Ali",
+          property: "Apartment# 5C Tower 4",
+          tenants: 18,
+          image: "avatar.jpg",
+        },
+      ];
+
+      let currentPage = 1;
+      const rowsPerPage = 8;
+
+      // Load Data into Table
+      function loadTableData(page) {
+        const start = (page - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+        const tableBody = document.getElementById("tableBody");
+        tableBody.innerHTML = "";
+
+        data.slice(start, end).forEach((item, index) => {
+          let row = `<tr>
+            <td><input type="checkbox"></td>
+            <td><img src="${item.image}" class="avatar"> ${item.name}</td>
+            <td>${item.property}</td>
+            <td>${item.tenants}</td>
+            <td class="action-menu">⋮</td>
+        </tr>`;
+          tableBody.innerHTML += row;
+        });
+
+        updatePaginationNumbers();
+      }
+
+      // Search Functionality
+      function searchTable() {
+        let filter = document.getElementById("searchInput").value.toLowerCase();
+        let rows = document.querySelectorAll("tbody tr");
+
+        rows.forEach((row) => {
+          let text = row.innerText.toLowerCase();
+          row.style.display = text.includes(filter) ? "" : "none";
+        });
+      }
+
+      // Sorting Functionality
+      function sortTable(columnIndex) {
+        data.sort((a, b) => {
+          let valA = Object.values(a)[columnIndex - 1].toString().toLowerCase();
+          let valB = Object.values(b)[columnIndex - 1].toString().toLowerCase();
+          return valA.localeCompare(valB);
+        });
+        loadTableData(currentPage);
+      }
+
+      // Pagination
+      function prevPage() {
+        if (currentPage > 1) {
+          currentPage--;
+          loadTableData(currentPage);
+        }
+      }
+
+      function nextPage() {
+        if (currentPage * rowsPerPage < data.length) {
+          currentPage++;
+          loadTableData(currentPage);
+        }
+      }
+
+      function updatePaginationNumbers() {
+        const totalPages = Math.ceil(data.length / rowsPerPage);
+        let numbers = "";
+
+        for (let i = 1; i <= totalPages; i++) {
+          numbers += `<span class="page-number ${
+            i === currentPage ? "selected" : ""
+          }" onclick="goToPage(${i})">${i}</span> `;
+        }
+        document.getElementById("paginationNumbers").innerHTML = numbers;
+      }
+
+      function goToPage(page) {
+        currentPage = page;
+        loadTableData(page);
+      }
+
+      // Select All Checkboxes
+      document
+        .getElementById("selectAll")
+        .addEventListener("change", function () {
+          document
+            .querySelectorAll("tbody input[type='checkbox']")
+            .forEach((checkbox) => {
+              checkbox.checked = this.checked;
+            });
+        });
+
+      // Initial Load
+      loadTableData(currentPage);
+    </script>
+    <!-- script end here -->
   </body>
 </html>
