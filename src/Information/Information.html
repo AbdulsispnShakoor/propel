@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All-Invoices</title>
-    <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="All-Invoices.css" />
+    <title>Information</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="Information.css" />
 
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="../../script.js" defer></script>
+    <script src="../script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -25,7 +25,7 @@
       <!-- Sidebar -->
       <aside class="sidebar">
         <div class="logo">
-          <img src="../../../public/images/propel-logo.png" alt="propel" />
+          <img src="../../public/images/propel-logo.png" alt="propel" />
           <div class="logo-info">
             <h2>Propel</h2>
             <p>Property Management</p>
@@ -840,7 +840,7 @@
           <!-- Left Section (User Info) -->
           <div class="user-info">
             <img
-              src="../../../public/images/Avatar.png"
+              src="../../public/images/Avatar.png"
               alt="User Avatar"
               class="avatar"
             />
@@ -857,7 +857,7 @@
               <span class="badge"></span>
             </div>
             <img
-              src="../../../public/images/Avatar.png"
+              src="../../public/images/Avatar.png"
               alt="User Avatar"
               class="avatar"
             />
@@ -865,31 +865,30 @@
         </header>
         <!-- header end -->
 
-        <!-- All-Invoices start here -->
+        <!-- doc start here -->
         <div class="container">
-          <div class="header">
-            <div class="top-text">
-              <h2>All Invoices</h2>
-              <p>Display the overview of invoice</p>
+          <main class="top">
+            <div class="text-content">
+              <h2>Information</h2>
+              <p>Display the overview of Documents</p>
             </div>
-            <div class="btns-group">
-              <select>
-                <option>Select Invoice Type</option>
-              </select>
-              <select>
+
+            <div class="header-actions">
+              <select class="property-filter">
+                <option>Select Property Name</option>
                 <option>Select Property Name</option>
               </select>
-              <button>Send a Group Reminder</button>
-              <button>Add New Invoice</button>
+              <button class="btn-download">Download Excel / pdf</button>
+              <button class="btn-new-information">Add new information</button>
             </div>
-          </div>
+          </main>
 
           <table>
             <thead>
               <tr>
                 <th><input type="checkbox" /></th>
                 <th>
-                  <h4 style="display: inline-block">Invoice</h4>
+                  <h4 style="display: inline-block">SL</h4>
 
                   <span style="margin-top: 12px"
                     ><svg
@@ -906,7 +905,42 @@
                     </svg>
                   </span>
                 </th>
+                <th>
+                  <h4 style="display: inline-block">Name</h4>
 
+                  <span style="margin-top: 12px"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1663 7.91667L9.99967 3.75L5.83301 7.91667H14.1663ZM14.1663 12.0833L9.99967 16.25L5.83301 12.0833H14.1663Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </th>
+                <!-- <th>
+                  <h4 style="display: inline-block">Tenant Name</h4>
+
+                  <span style="margin-top: 12px"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1663 7.91667L9.99967 3.75L5.83301 7.91667H14.1663ZM14.1663 12.0833L9.99967 16.25L5.83301 12.0833H14.1663Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </th> -->
                 <th>
                   <h4 style="display: inline-block">Property</h4>
 
@@ -926,7 +960,25 @@
                   </span>
                 </th>
                 <th>
-                  <h4 style="display: inline-block">Due Date</h4>
+                  <h4 style="display: inline-block">Distance</h4>
+
+                  <span style="margin-top: 12px"
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.1663 7.91667L9.99967 3.75L5.83301 7.91667H14.1663ZM14.1663 12.0833L9.99967 16.25L5.83301 12.0833H14.1663Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </th>
+                <th>
+                  <h4 style="display: inline-block">Contact number</h4>
 
                   <span style="margin-top: 12px"
                     ><svg
@@ -967,39 +1019,59 @@
             <tbody>
               <tr>
                 <td><input type="checkbox" /></td>
-                <td>#424525455</td>
-                <td>House# 5a Sarwar Chowk</td>
-                <td>11-12-2024</td>
-                <td><button>&#8942;</button></td>
+                <td>01</td>
+                <td>PDF</td>
+                <td>570 sq House</td>
+                <td>1.5 Miles away</td>
+                <td>+611212155</td>
+                <td><button class="action-btn">⋮</button></td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
-                <td>#424525455</td>
-                <td>House# 5a Sarwar Chowk</td>
-                <td>11-12-2024</td>
-                <td><button>&#8942;</button></td>
+                <td>01</td>
+                <td>PDF</td>
+                <td>570 sq House</td>
+                <td>1.5 Miles away</td>
+                <td>+611212155</td>
+                <td><button class="action-btn">⋮</button></td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
-                <td>#424525455</td>
-                <td>House# 5a Sarwar Chowk</td>
-                <td>11-12-2024</td>
-                <td><button>&#8942;</button></td>
+                <td>01</td>
+                <td>PDF</td>
+                <td>570 sq House</td>
+                <td>1.5 Miles away</td>
+                <td>+611212155</td>
+                <td><button class="action-btn">⋮</button></td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
-                <td>#424525455</td>
-                <td>House# 5a Sarwar Chowk</td>
-                <td>11-12-2024</td>
-                <td><button>&#8942;</button></td>
+                <td>01</td>
+                <td>PDF</td>
+                <td>570 sq House</td>
+                <td>1.5 Miles away</td>
+                <td>+611212155</td>
+                <td><button class="action-btn">⋮</button></td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
-                <td>#424525455</td>
-                <td>House# 5a Sarwar Chowk</td>
-                <td>11-12-2024</td>
-                <td><button>&#8942;</button></td>
+                <td>01</td>
+                <td>PDF</td>
+                <td>570 sq House</td>
+                <td>1.5 Miles away</td>
+                <td>+611212155</td>
+                <td><button class="action-btn">⋮</button></td>
               </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>01</td>
+                <td>PDF</td>
+                <td>570 sq House</td>
+                <td>1.5 Miles away</td>
+                <td>+611212155</td>
+                <td><button class="action-btn">⋮</button></td>
+              </tr>
+              <!-- Repeat rows as needed -->
             </tbody>
           </table>
 
@@ -1013,7 +1085,7 @@
             <button>&gt;</button>
           </div>
         </div>
-        <!-- All-Invoices end here -->
+        <!-- doc end here -->
       </main>
     </div>
   </body>
