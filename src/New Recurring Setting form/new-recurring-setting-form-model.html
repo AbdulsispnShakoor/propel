@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Recurring Setting</title>
+    <link rel="stylesheet" href="new-recurring-setting-form-model.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <button class="close-btn">&times;</button>
+      <h2>New Recurring Setting</h2>
+      <p class="subheading">
+        Make sure you have filled in all necessary fields
+      </p>
+
+      <form id="property-form">
+        <label>Invoice Prefix</label>
+        <input type="text" placeholder="INV" style="width: 95%" />
+
+        <div class="row">
+          <div class="col">
+            <label for="Property">Property</label>
+            <select name="Property" id="Property">
+              <option>Select property Type</option>
+              <option>Apartment</option>
+              <option>House</option>
+              <option>Condo</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="Units">Units</label>
+            <select name="Units" id="Units">
+              <option>Select units</option>
+              <option>Apartment</option>
+              <option>House</option>
+              <option>Condo</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="Recurring type">Recurring type</label>
+            <select name="Recurring type" id="Recurring type">
+              <option>Select Recurring type</option>
+              <option>jan</option>
+              <option>feb</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="Due Date">Due date after invoice creation</label>
+            <input type="number" placeholder="5" style="width: 90%" />
+          </div>
+        </div>
+        <div class="row" style="margin-top: 12px">
+          <div class="col">
+            <label for="Invoice Type">Status</label>
+            <select name="Invoice Type" id="Invoice Type">
+              <option>Active</option>
+              <option>In Active</option>
+            </select>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 12px">
+          <div class="col">
+            <label for="Invoice Type">Invoice Type</label>
+            <select name="Invoice Type" id="Invoice Type">
+              <option>Select Type</option>
+              <option>jan</option>
+              <option>feb</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="Amount">Amount</label>
+            <input
+              type="number"
+              id="Amount"
+              placeholder="$00.00"
+              style="width: 90%; padding: 0.7rem 0.6rem"
+            />
+          </div>
+        </div>
+
+        <label for="Description">Description</label>
+        <textarea
+          name="Description"
+          id="Description"
+          rows="4"
+          placeholder="Tell us about your home"
+          style="width: 95%"
+        ></textarea>
+        <button class="remove-Item-btn">Remove Item</button>
+        <button class="add-Item-btn">Add Items</button>
+        <button class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
