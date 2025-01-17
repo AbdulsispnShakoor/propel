@@ -137,6 +137,8 @@
   padding: 8px;
 }
 .button-text {
+  background: none;
+  border: none;
   font-feature-settings: "ss11" on, "cv09" on, "liga" off, "calt" off;
   align-self: stretch;
   gap: 8px;

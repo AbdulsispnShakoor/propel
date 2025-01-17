@@ -1,0 +1,115 @@
+/* General Styles */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Form Container */
+.form-container {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subheading {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  color: #0a0d14;
+  margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* Row Styling */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+/* Save Button */
+.remove-Item-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.add-Item-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #1a4573;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.create-invoice-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #74a9c6;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
