@@ -3,58 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="add-information-form-model.css" />
-    <title>Add Information</title>
+    <link rel="stylesheet" href="add-maintainers-form-model.css" />
+    <title>Add Maintainers</title>
   </head>
   <body>
     <main class="add-tenant-model-form">
       <button class="open-modal-btn" onclick="openModal()">
-        Add Information
+        Add Maintainers
       </button>
 
       <div id="tenantModal" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
-          <h2>Add Information</h2>
+          <h2>Add Maintainer</h2>
           <p class="subtitle">
             Make sure you have filled in all necessary fields
           </p>
 
           <form id="tenantForm">
-            <div class="row">
-              <div class="col">
-                <label>Property</label>
-                <select>
-                  <option>Select type</option>
-                </select>
-              </div>
-            </div>
-            <label for="Name">Name</label>
-            <input type="text" placeholder="Name" style="width: 95%" />
-            <div class="row">
-              <div class="col">
-                <label>Distance</label>
-                <select>
-                  <option>1 mile</option>
-                </select>
-              </div>
-              <div class="col">
-                <label>Contact number</label>
-                <input
-                  type="number"
-                  style="width: 90%"
-                  placeholder="+6121112"
-                />
-              </div>
-            </div>
-
-            <label for="description">Description</label>
-            <textarea
-              style="width: 95%"
-              id="description"
-              placeholder="Tell us about your home"
-            ></textarea>
-
             <div class="file-upload">
               <svg
                 class="upload-icon"
@@ -139,9 +105,60 @@
                 </defs>
               </svg>
             </div>
+            <div class="row">
+              <div class="input-group">
+                <label for="Name">First Name</label>
+                <input type="text" placeholder="Naveed" />
+              </div>
+              <div class="input-group">
+                <label for="Name">Last name</label>
+                <input type="text" placeholder="Shabbir" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>Email</label>
+                <input
+                  type="email"
+                  style="width: 90%"
+                  placeholder="Naveed@gmail.com"
+                />
+              </div>
+              <div class="col">
+                <label>Contact number</label>
+                <input
+                  type="number"
+                  style="width: 90%"
+                  placeholder="+6121112"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label>Email</label>
+                <input
+                  type="email"
+                  style="width: 90%"
+                  placeholder="Naveed@gmail.com"
+                />
+              </div>
+              <div class="col">
+                <label>Assign property</label>
+                <select name="assign-property" id="assign-property">
+                  <option>Nothing selected</option>
+                  <option>Apartment</option>
+                  <option>House</option>
+                  <option>Condo</option>
+                </select>
+              </div>
+            </div>
 
-            <button type="submit" class="add-new-type-btn">Add New type</button>
-            <button type="submit" class="save-btn">Save expense</button>
+            <label for="Status">Status</label>
+            <select name="Status" id="Status">
+              <option>Active</option>
+              <option>Inactive</option>
+            </select>
+            <button type="submit" class="save-btn">Submit</button>
           </form>
         </div>
       </div>
