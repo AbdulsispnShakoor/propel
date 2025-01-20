@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="add-ticket-topic-form-model.css" />
+    <title>Add Ticket Topic</title>
+  </head>
+  <body>
+    <main class="add-tenant-model-form">
+      <button class="open-modal-btn" onclick="openModal()">
+        Add Ticket Topic
+      </button>
+
+      <div id="tenantModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Add Ticket Topic</h2>
+          <p class="subtitle">
+            Make sure you have filled in all necessary fields
+          </p>
+          <hr />
+          <form id="tenantForm">
+            <label for="Expense name">Expense name</label>
+            <input type="text" placeholder="Name" style="width: 95%" />
+
+            <div class="status">
+              <label for="status">Status</label>
+              <select name="status" id="status">
+                <option value="Active">Active</option>
+                <option value="closed">Closed</option>
+              </select>
+            </div>
+            <button type="submit" class="save-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- script start here -->
+    <script>
+      // Open Modal
+      function openModal() {
+        document.getElementById("tenantModal").style.display = "flex";
+      }
+
+      // Close Modal
+      function closeModal() {
+        document.getElementById("tenantModal").style.display = "none";
+      }
+
+      // Form Validation & Submission
+      document
+        .getElementById("tenantForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let propertyType = document.getElementById("propertyType").value;
+          let rent = document.getElementById("rent").value;
+          let deposit = document.getElementById("deposit").value;
+          let description = document.getElementById("description").value;
+          let dateJoin = document.getElementById("dateJoin").value;
+          let location = document.getElementById("location").value;
+          let file = document.getElementById("fileInput").files[0];
+
+          if (!propertyType || !rent || !deposit || !dateJoin || !location) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
+          if (file) {
+            let fileSizeMB = file.size / (1024 * 1024);
+            if (fileSizeMB > 50) {
+              alert("File size should be less than 50MB.");
+              return;
+            }
+          }
+
+          alert("Tenant added successfully!");
+          closeModal();
+        });
+
+      // Close modal if clicked outside
+      window.onclick = function (event) {
+        let modal = document.getElementById("tenantModal");
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+    <!-- script end here -->
+  </body>
+</html>
