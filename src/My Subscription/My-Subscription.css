@@ -1,0 +1,181 @@
+.container {
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px;
+}
+.btn-download {
+  background-color: #1a4573;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1;
+  font-size: 12px;
+  font-weight: 600;
+}
+.btn-add-expense-type {
+  background-color: #91d3f8;
+  color: rgb(68, 68, 68);
+  border: none;
+  padding: 12px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1;
+  font-size: 12px;
+  font-weight: 600;
+}
+h4 {
+  font-weight: 300;
+}
+.property-filter {
+  border-radius: 5px;
+  padding: 8px;
+}
+h2 {
+  margin-bottom: 5px;
+}
+
+p {
+  color: #6c757d;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.property-dropdown {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* ------------------ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.subscription-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  justify-content: start;
+  height: 88rem;
+}
+
+.subscription-title {
+  color: var(--text-main-900, #0a0d14);
+  font-feature-settings: "ss11" on, "cv09" on, "liga" off, "calt" off;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.subscription-wrapper {
+  display: flex;
+  margin: 14px 0 0;
+  width: 100%;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  letter-spacing: -0.08px;
+  line-height: 1;
+  justify-content: center;
+}
+
+.upload-area {
+  border-radius: 12px;
+  background-color: rgba(246, 248, 250, 1);
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  min-height: 152px;
+  width: 531px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  padding: 18px 32px;
+  border: 1px dashed rgba(205, 208, 213, 1);
+}
+
+.status-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+}
+
+.status-text {
+  font-feature-settings: "ss11" on, "cv09" on, "liga" off, "calt" off;
+  align-self: stretch;
+  margin: 20px 0 0;
+  width: 100%;
+  color: var(--text-main-900, #0a0d14);
+}
+
+.action-button {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 2px rgba(55, 93, 251, 0.08);
+  display: flex;
+  margin: 20px 0 0;
+  align-items: center;
+  gap: 2px;
+  overflow: hidden;
+  color: var(--primary-base, #375dfb);
+  justify-content: center;
+  padding: 6px 16px;
+  border: 1px solid rgba(55, 93, 251, 1);
+  cursor: pointer;
+}
+
+.button-text {
+  font-feature-settings: "ss11" on, "cv09" on, "liga" off, "calt" off;
+  align-self: stretch;
+  gap: 8px;
+  margin: auto 0;
+  padding: 0 4px;
+}
+
+@media (max-width: 991px) {
+  .subscription-title {
+    max-width: 100%;
+  }
+
+  .subscription-wrapper {
+    max-width: 100%;
+  }
+
+  .upload-area {
+    padding: 0 20px;
+  }
+
+  .status-text {
+    max-width: 100%;
+  }
+}
+/* ------------------ */

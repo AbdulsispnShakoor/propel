@@ -44,21 +44,24 @@
         <div class="row">
           <div class="col">
             <label>Monthly Rent</label>
-            <input type="text" placeholder="$0.00" />
+            <input type="text" placeholder="$0.00" style="width: 90%" />
           </div>
           <div class="col">
             <label>Security Deposit</label>
-            <input type="text" placeholder="$0.00" />
+            <input type="text" placeholder="$0.00" style="width: 90%" />
           </div>
         </div>
 
         <label>Description</label>
-        <textarea placeholder="Tell us about your home"></textarea>
+        <textarea
+          placeholder="Tell us about your home"
+          style="width: 95%"
+        ></textarea>
 
         <div class="row">
           <div class="col">
             <label>Date Available</label>
-            <input type="date" />
+            <input type="date" style="width: 90%" />
           </div>
           <div class="col">
             <label>Lease Duration</label>
@@ -73,6 +76,11 @@
           <p class="file-types">
             JPEG, PNG, PDF, and MP4 formats, up to 50 MB.
           </p>
+          <input
+            type="file"
+            style="width: 12%; position: absolute"
+            placeholder="Browse file"
+          />
           <button type="button">Browse File</button>
         </div>
 

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="subscription-form.css" />
+    <title>Choose Subscription Plan</title>
+  </head>
+  <body>
+    <main class="add-tenant-model-form">
+      <button class="open-modal-btn" onclick="openModal()">
+        Choose Subscription Plan
+      </button>
+
+      <div id="tenantModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 style="color: black">Choose the right plan for you</h2>
+          <p class="subtitle">Select any which suits you</p>
+          <hr />
+          <main>
+            <div class="pricing-container">
+              <div class="pricing-wrapper">
+                <div class="pricing-cards">
+                  <div class="pricing-card" tabindex="0" role="button">
+                    <div class="card-header">
+                      <div class="plan-details">
+                        <div class="plan-type">Basic Plan</div>
+                        <div class="plan-name">Starter</div>
+                      </div>
+                    </div>
+
+                    <div class="price-wrapper">
+                      <div class="price">$9.99</div>
+                      <div class="price-period">/monthly</div>
+                    </div>
+
+                    <div class="features-section">
+                      <div class="features-title">What's included</div>
+                      <div class="features-list">
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ff1b7feccff0b57fa8732cc3e48c26a7e247ad30ec224101204035f73683bf27?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 2 Properties</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0b3484b8da19a2955a8b4f90784f41b43e0960f06d59742bbad5ddb503bb5246?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 0 Units</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/accf2cabc2972d65752468f5f31ce333b1f404244e9de252775e4883ac5c9e7c?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 1 Maintainers</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f310eeb037ebed4e9a2d2f0eb32a8df06563f7a0a9063f56736edc7c2b658684?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 1 Invoices</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5fb8f248b9b5038157b7aba711f30f9319faee81aa65e044a19a760582d5d2f?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">
+                            1 Auto Invoices Generate
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="subscribe-button">Subscribe Now</button>
+                  </div>
+
+                  <div class="pricing-card" tabindex="0" role="button">
+                    <div class="card-header">
+                      <div class="plan-details">
+                        <div class="plan-type pro">Standard Plan</div>
+                        <div class="plan-name pro">Pro</div>
+                      </div>
+                    </div>
+
+                    <div class="popular-tag">Popular</div>
+
+                    <div class="price-wrapper">
+                      <div class="price pro">$14.99</div>
+                      <div class="price-period pro">/monthly</div>
+                    </div>
+
+                    <div class="features-section">
+                      <div class="features-title pro">What's included</div>
+                      <div class="features-list pro">
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc53780f888d60533f863cb4031ce0a03ebf1f2bb80beee8a2b722a6b25884dc?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 5 Properties</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc53780f888d60533f863cb4031ce0a03ebf1f2bb80beee8a2b722a6b25884dc?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 0 Units</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc53780f888d60533f863cb4031ce0a03ebf1f2bb80beee8a2b722a6b25884dc?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 10 Maintainers</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc53780f888d60533f863cb4031ce0a03ebf1f2bb80beee8a2b722a6b25884dc?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 3000 Invoices</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc53780f888d60533f863cb4031ce0a03ebf1f2bb80beee8a2b722a6b25884dc?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">
+                            300 Auto Invoices Generate
+                          </div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc53780f888d60533f863cb4031ce0a03ebf1f2bb80beee8a2b722a6b25884dc?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Ticket Support</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc53780f888d60533f863cb4031ce0a03ebf1f2bb80beee8a2b722a6b25884dc?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Notice Support</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="subscribe-button pro-btn">
+                      Subscribe Now
+                    </button>
+                  </div>
+
+                  <div class="pricing-card" tabindex="0" role="button">
+                    <div class="card-header">
+                      <div class="plan-details">
+                        <div class="plan-type">Premium Plan</div>
+                        <div class="plan-name">Enterprise</div>
+                      </div>
+                    </div>
+
+                    <div class="price-wrapper">
+                      <div class="price">$19.99</div>
+                      <div class="price-period">/monthly</div>
+                    </div>
+
+                    <div class="features-section">
+                      <div class="features-title">What's included</div>
+                      <div class="features-list">
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8b85349278a986f4fc4016920aad28e9174a87f3f282d46803f9bc6b7e87784?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 16 Properties</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/449745bbf1e4864bedef334c36927224b5251fd2560fb9ad0c15d683013e4165?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 0 Units</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9d5eef7e03a207f139b284761c753738fa4520430149d31a2255b6c453b6a914?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Add 50 Maintainers</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6fb9abb373082c8b00e101985af3122d747b18555c5f1fc4146fdcb5b1a1ca69?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">
+                            5000 Auto Invoices Generate
+                          </div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f004f77efad4f6e1a5673b0c77522388f191f998d203ce1d06fac11c23471996?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Ticket Support</div>
+                        </div>
+                        <div class="feature-item">
+                          <img
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7c565eacebc86f6f50319e3ecbb7e3b08eacd080cc3d3a8a7d7c780ba499de21?placeholderIfAbsent=true&apiKey=662aa70e04984844b5fa157f59253806"
+                            alt=""
+                            class="feature-icon"
+                          />
+                          <div class="feature-text">Notice Support</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="subscribe-button">Subscribe Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </main>
+
+    <!-- script start here -->
+    <script>
+      // Open Modal
+      function openModal() {
+        document.getElementById("tenantModal").style.display = "flex";
+      }
+
+      // Close Modal
+      function closeModal() {
+        document.getElementById("tenantModal").style.display = "none";
+      }
+
+      // Form Validation & Submission
+      document
+        .getElementById("tenantForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let propertyType = document.getElementById("propertyType").value;
+          let rent = document.getElementById("rent").value;
+          let deposit = document.getElementById("deposit").value;
+          let description = document.getElementById("description").value;
+          let dateJoin = document.getElementById("dateJoin").value;
+          let location = document.getElementById("location").value;
+          let file = document.getElementById("fileInput").files[0];
+
+          if (!propertyType || !rent || !deposit || !dateJoin || !location) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
+          if (file) {
+            let fileSizeMB = file.size / (1024 * 1024);
+            if (fileSizeMB > 50) {
+              alert("File size should be less than 50MB.");
+              return;
+            }
+          }
+
+          alert("Tenant added successfully!");
+          closeModal();
+        });
+
+      // Close modal if clicked outside
+      window.onclick = function (event) {
+        let modal = document.getElementById("tenantModal");
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+    <!-- script end here -->
+  </body>
+</html>
