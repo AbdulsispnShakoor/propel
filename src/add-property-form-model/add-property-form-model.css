@@ -85,6 +85,16 @@ form textarea {
   margin-bottom: 15px;
 }
 
+.upload-icon {
+  position: absolute;
+  bottom: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #74a9c6;
+  cursor: pointer;
+}
+
 .file-upload .file-types {
   font-size: 12px;
   color: gray;
