@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Add-Staff-Users.css" />
+    <title>Add Staff Users</title>
+  </head>
+  <body>
+    <main class="add-tenant-model-form">
+      <button class="open-modal-btn" onclick="openModal()">
+        Add Staff Users
+      </button>
+
+      <div id="tenantModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Add Staff Users</h2>
+          <p class="subtitle">
+            Make sure you have filled in all necessary fields
+          </p>
+          <hr />
+          <form id="tenantForm">
+            <div class="row">
+              <div class="input-group">
+                <label for="name">First Name</label>
+                <input type="text" placeholder="name" style="width: 90%" />
+              </div>
+              <div class="input-group">
+                <label for="name">last Name</label>
+                <input type="text" placeholder="name" style="width: 90%" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" style="width: 90%" />
+              </div>
+              <div class="input-group">
+                <label for="contact-number">Contact Number</label>
+                <input type="number" placeholder="Number" style="width: 90%" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-group">
+                <label for="Password">Password</label>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  style="width: 90%"
+                />
+              </div>
+              <div class="input-group">
+                <label for="Assign Role">Assign Role</label>
+                <select name="Assign Role" id="Assign Role">
+                  <option value="Owner">Owner</option>
+                  <option value="Admin">Admin</option>
+                  <option value="Manager">Manager</option>
+                  <option value="Tenant">Tenant</option>
+                </select>
+              </div>
+            </div>
+            <div class="status">
+              <label for="Status">Status</label>
+              <select name="Status" id="Status">
+                <option value="Active">Active</option>
+                <option value="Close">Close</option>
+              </select>
+            </div>
+            <button type="submit" class="save-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- script start here -->
+    <script>
+      // Open Modal
+      function openModal() {
+        document.getElementById("tenantModal").style.display = "flex";
+      }
+
+      // Close Modal
+      function closeModal() {
+        document.getElementById("tenantModal").style.display = "none";
+      }
+
+      // Form Validation & Submission
+      document
+        .getElementById("tenantForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let propertyType = document.getElementById("propertyType").value;
+          let rent = document.getElementById("rent").value;
+          let deposit = document.getElementById("deposit").value;
+          let description = document.getElementById("description").value;
+          let dateJoin = document.getElementById("dateJoin").value;
+          let location = document.getElementById("location").value;
+          let file = document.getElementById("fileInput").files[0];
+
+          if (!propertyType || !rent || !deposit || !dateJoin || !location) {
+            alert("Please fill in all required fields.");
+            return;
+          }
+
+          if (file) {
+            let fileSizeMB = file.size / (1024 * 1024);
+            if (fileSizeMB > 50) {
+              alert("File size should be less than 50MB.");
+              return;
+            }
+          }
+
+          alert("Tenant added successfully!");
+          closeModal();
+        });
+
+      // Close modal if clicked outside
+      window.onclick = function (event) {
+        let modal = document.getElementById("tenantModal");
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+    <!-- script end here -->
+  </body>
+</html>
