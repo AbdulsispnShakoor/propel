@@ -19,6 +19,12 @@
 .row .col {
   flex: 1;
 }
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid rgb(236, 236, 236);
+}
 /* Modal Background */
 .modal {
   display: none;
@@ -62,7 +68,7 @@
 /* Form Elements */
 label {
   display: block;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -73,7 +79,7 @@ textarea {
   padding: 8px;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 textarea {
@@ -109,7 +115,7 @@ textarea {
   padding: 15px;
   text-align: center;
   margin-top: 10px;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   background-color: #f1f1f1;
 }
@@ -144,7 +150,7 @@ textarea {
   background: #0c1f34;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
 }
