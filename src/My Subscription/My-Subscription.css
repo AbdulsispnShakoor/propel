@@ -83,7 +83,13 @@ p {
   font-weight: 500;
   text-align: center;
   justify-content: start;
-  height: 88rem;
+  /* height: 88rem; */
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .subscription-title {
