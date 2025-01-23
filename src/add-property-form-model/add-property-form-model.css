@@ -17,7 +17,7 @@ body {
   background: white;
   padding: 20px;
   width: 500px;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   position: relative;
 }
@@ -36,7 +36,10 @@ body {
 /* Heading */
 h2 {
   text-align: center;
-  margin-bottom: 5px;
+  font-size: 24px;
+  color: #333;
+  font-weight: regular;
+  margin-bottom: 15px;
 }
 
 .subheading {
@@ -49,7 +52,8 @@ h2 {
 /* Form Styles */
 form label {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
   display: block;
   margin-bottom: 5px;
 }
@@ -76,12 +80,18 @@ form textarea {
   flex: 1;
 }
 
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid rgb(236, 236, 236);
+}
+
 /* File Upload */
 .file-upload {
   text-align: center;
   border: 2px dashed #ccc;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-bottom: 15px;
 }
 
