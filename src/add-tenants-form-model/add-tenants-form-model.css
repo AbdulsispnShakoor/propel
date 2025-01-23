@@ -30,7 +30,7 @@
   background: white;
   padding: 20px;
   width: 400px;
-  border-radius: 8px;
+  border-radius: 14px;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -66,11 +66,13 @@ textarea {
   padding: 8px;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 textarea {
   height: 60px;
+  width: 95%;
+  resize: vertical;
 }
 
 /* Input Groups */
@@ -102,9 +104,9 @@ textarea {
   padding: 15px;
   text-align: center;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: #f6f8fa;
 }
 
 .file-upload input[type="file"] {
@@ -120,6 +122,11 @@ textarea {
   color: #74a9c6;
   cursor: pointer;
 }
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid rgb(236, 236, 236);
+}
 /* Save Button */
 .save-btn {
   width: 100%;
@@ -127,7 +134,7 @@ textarea {
   background: #74a9c6;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
 }

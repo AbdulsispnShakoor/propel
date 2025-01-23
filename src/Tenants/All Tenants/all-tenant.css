@@ -107,7 +107,7 @@
   overflow: hidden;
   justify-content: start;
   margin: auto 0;
-  padding: 6px 12px;
+  padding: 8px 12px;
 }
 .img {
   aspect-ratio: 1;
@@ -134,7 +134,7 @@
   flex-grow: 1;
   width: 143px;
   margin: auto 0;
-  padding: 8px;
+  padding: 10px;
 }
 .button-text {
   background: none;
@@ -262,7 +262,7 @@
 .icon-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 44px;
   height: 44px;
   border-radius: 50px;
