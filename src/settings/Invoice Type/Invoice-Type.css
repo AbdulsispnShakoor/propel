@@ -4,7 +4,6 @@
   background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
 }
 
@@ -86,6 +85,17 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
+th:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+th:last-child {
+  border-radius: 0px 8px 8px 0px;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+  padding: 18px 0px;
+}
+
 th {
   font-weight: bold;
 }
@@ -109,7 +119,7 @@ tbody tr:hover {
 .pagination {
   position: relative;
   display: flex;
-  bottom: -14rem;
+  bottom: -8rem;
   justify-content: center;
   align-items: center;
   padding: 20px;

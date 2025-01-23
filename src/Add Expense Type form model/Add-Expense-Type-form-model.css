@@ -43,11 +43,15 @@
 }
 
 .modal-content h2 {
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   text-align: center;
+  font-weight: 500;
+  font-size: 32px;
 }
 .modal-content p {
   text-align: center;
+  font-size: 14px;
+  color: #525866;
 }
 
 /* Close Button */
@@ -68,7 +72,7 @@ label {
 }
 hr {
   border: 0;
-  border-top: 1px solid rgb(197, 197, 197);
+  border-top: 1px solid rgb(230, 230, 230);
   margin-bottom: 20px;
 }
 select,

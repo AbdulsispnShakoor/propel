@@ -48,6 +48,8 @@
 }
 .modal-content p {
   text-align: center;
+  font-size: 14px;
+  color: #525866;
 }
 
 /* Close Button */

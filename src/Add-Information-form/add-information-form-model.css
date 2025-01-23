@@ -52,6 +52,8 @@ hr {
 }
 .modal-content p {
   text-align: center;
+  font-size: 14px;
+  color: #525866;
 }
 
 /* Close Button */
@@ -67,6 +69,7 @@ hr {
 label {
   display: block;
   font-weight: 500;
+  font-size: 14px;
   margin-top: 10px;
 }
 
