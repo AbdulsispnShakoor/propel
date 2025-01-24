@@ -45,6 +45,7 @@
 .modal-content h2 {
   /* margin-bottom: 20px; */
   text-align: center;
+  font-weight: 500;
 }
 .modal-content p {
   text-align: center;
